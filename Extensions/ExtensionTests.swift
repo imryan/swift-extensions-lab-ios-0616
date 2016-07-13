@@ -52,7 +52,7 @@ class StringExtensions: QuickSpec {
             
             it("points computed property should add 2 point for vowels") {
                 let vowels = "aeiouy"
-                expect(vowels.points).to(equal(12))
+                expect(vowels.points).to(equal(11)) // This should be 11 since 'y' is worth 1 point
             }
         }
         
@@ -89,7 +89,7 @@ class IntExtensions: QuickSpec {
         describe("square:") {
             
             it("square function should square itself") {
-                sampleNumber.square()
+                sampleNumber = sampleNumber.square()
                 expect(sampleNumber).to(equal(15241383936))
             }
         }
